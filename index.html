@@ -1,0 +1,107 @@
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style type="text/css">
+      [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+      }
+    </style>
+  </head>
+  <body ng-cloak>
+    <!-- whole page -->
+    <div id="wrapper" class="container-fluid" ng-controller="FirstController">
+      <!-- Toolbar -->
+      <nav class="navbar navbar-default navbar-fixed-top xs-navbar-toolbar">
+        <div id="toolbar" class="row">
+          <div class="container-fluid">
+            <ul class="nav navbar-nav nav-width">
+              <li class="col-md-4 col-sm-4 col-xs-2 col-xs-2-toolbar">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                      <img alt="Brand" src="images/brand.jpeg" />
+                    </a>
+                  </div>
+                </div>
+              </li>                
+              <li class="col-md-4 col-sm-4 col-xs-8 col-xs-8-toolbar align-text">
+                <div class="navbar-header align-center">
+                  <a href="#" class="navbar-brand align-center">ME - Who am I?</a>
+                </div>
+              </li>
+              <li class="visible-md visible-lg col-md-4">
+                <ul class="nav navbar-nav navbar-right pull-right">
+                  <li><a href="#" target="_blank" style="display:inline-block;text-decoration:underline">Google+</a><span>&nbsp;|&nbsp;</span></li>
+                  <li><a href="https://www.facebook.com/clintpjoshy" target="_blank" style="display:inline-block;text-decoration:underline">Facebook</a><span>&nbsp;|&nbsp;</span></li>
+                  <li><a href="https://github.com/clintpjoshy" target="_blank" style="display:inline-block;text-decoration:underline">GitHub</a><span>&nbsp;|&nbsp;</span></li>
+<!--                <li><a href="#" target="_blank" style="display:inline-block;text-decoration:underline">LinkedIn</a></li>-->
+                </ul>
+              </li>
+              <li class="visible-sm col-sm-4">
+                <ul class="nav navbar-nav pull-right">
+                  <li><a id="gp" href="#" target="_blank" style="display:inline-block;text-decoration:underline"></a></li>
+                  <li class="social-left-margin"><a id="fb" href="https://www.facebook.com/clintpjoshy" target="_blank" style="display:inline-block;text-decoration:underline"></a></li>
+                  <li class="social-left-margin"><a id="gh" href="https://github.com/clintpjoshy" target="_blank" style="display:inline-block;text-decoration:underline"></a></li>
+<!--                <li><a href="#" target="_blank" style="display:inline-block;text-decoration:underline">LinkedIn</a></li>-->
+                </ul>
+              </li>
+              <li class="visible-xs col-xs-2 col-xs-2-toolbar">
+                <ul class="nav navbar-nav pull-right social-margin">
+                  <li>
+                    <a role="button" href="#social-media" id="social" data-toggle="collapse" aria-expanded="false" aria-controls="social-media"></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="row collapse" id="social-media">
+        <div class="col-xs-12">
+          <ul class="nav navbar-nav">
+            <li class="social-xs-display"><a id="gp" href="#" target="_blank" style="display:inline-block;text-decoration:underline"></a></li>
+            <li class="social-xs-display social-left-margin"><a id="fb" href="https://www.facebook.com/clintpjoshy" target="_blank" style="display:inline-block;text-decoration:underline"></a></li>
+            <li class="social-xs-display social-left-margin"><a id="gh" href="https://github.com/clintpjoshy" target="_blank" style="display:inline-block;text-decoration:underline"></a></li>
+<!--                <li><a href="#" target="_blank" style="display:inline-block;text-decoration:underline">LinkedIn</a></li>-->
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Sidebar -->
+        <div id="sidebar" class="visible-sm visible-md visible-lg col-md-2 col-sm-3" style="height:100%">
+          <ul class="nav nav-pills nav-stacked" style="margin-top: 10px">
+            <li role="presentation" class="sidebar-menu" ng-repeat="tab in tabs"><a href="#">{{tab}}</a></li>
+          </ul>
+        </div>
+        <!--Mobile / tabs -->
+        <div class="visible-xs col-sm-12" style="background-color: red">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed menu-block" data-toggle="collapse" data-target="#menu-item" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+<div class="mob-heading">
+            <h6 class="mob-heading-center">Test</h6>
+</div>
+          </div>
+          <ul id="menu-item" class="collapse nav nav-stacked">
+            <li role="presentation" class="sidebar-menu" ng-repeat="tab in tabs"><a href="#">{{tab}}</a><hr /></li>
+          </ul>
+        </div>
+        <!-- Main Content -->
+        <div id="main-content" class="col-md-10 col-sm-9 noPadding" style="border: 1px solid blue; height:100%">
+        </div>
+      </div>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+
+    <div id="wrapper" class="container-fluid">
+      <!-- Toolbar -->
+<div class="row">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div id="toolbar">
+          <div class="container-fluid">
+            <ul class="nav navbar-nav nav-width">
+              <li class="col-md-4">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                      <img alt="Brand" src="images/brand.jpeg" />
+                    </a>
+                  </div>
+                </div>
+              </li>                
+              <li class="col-md-4 align-text">
+                <div class="navbar-header align-center">
+                  <a href="#" class="navbar-brand align-center">ME - Who am I?</a>
+                </div>
+              </li>
+              <li class="col-md-4">
+                <ul class="nav navbar-nav pull-right">
+                  <li><a href="#" target="_blank" style="display:inline-block;text-decoration:underline">Google+</a><span>&nbsp;|&nbsp;</span></li>
+                  <li><a href="https://www.facebook.com/clintpjoshy" target="_blank" style="display:inline-block;text-decoration:underline">Facebook</a><span>&nbsp;|&nbsp;</span></li>
+                  <li><a href="https://github.com/clintpjoshy" target="_blank" style="display:inline-block;text-decoration:underline">GitHub</a><span>&nbsp;|&nbsp;</span></li>
+<!--                <li><a href="#" target="_blank" style="display:inline-block;text-decoration:underline">LinkedIn</a></li>-->
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</div>
+      <div class="row">
+        <!-- Sidebar -->
+        <div id="sidebar" class="col-md-2" style="background-color:green; height:100%">
+        </div>
+        <!-- Main Content -->
+        <div id="main-content" class="col-md-10" style="background-color:blue; height:100%">
+        </div>
+      </div>
+    </div>

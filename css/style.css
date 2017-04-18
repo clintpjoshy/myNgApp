@@ -1,0 +1,146 @@
+html, body {
+  margin: 0px;
+}
+
+body {
+  padding-top: 50px;
+}
+
+#gp, #fb, #gh, #social {
+  background: url(../images/social_logo_sprite.png) no-repeat;
+  width: 42px;
+  height: 42px;
+  display: block;
+}
+
+#gp {
+  background-position: -126px 5px;
+}
+
+#fb {
+  background-position: 0px 5px;
+}
+
+#gh {
+  background-position: -42px 5px;
+}
+
+#social {
+  background: url(../images/social_logo_sprite.png) no-repeat;
+  background-position: -173px -5px;
+  width: 32px;
+  height: 32px;
+}
+
+#sidebar {
+  background-color: dimgrey;
+}
+
+#sidebar li {
+/*  background-color: lightskyblue;*/
+}
+
+.social-left-margin {
+  margin-left: 30px;
+}
+
+.nav-width {
+  width: 100%
+}
+
+.align-center {
+  width: 100%
+}
+
+.align-text {
+  text-align: center;
+}
+
+.noPadding {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.noBorderRadius {
+  border-radius: 0px !important;
+}
+
+.social-xs-display {
+  display: inline-block !important;
+}
+
+.sidebar-menu {
+  text-align: center;
+  font-size: 18px;
+}
+
+.sidebar-menu a:hover {
+  border-radius: 22px;
+}
+
+.mobile-menu {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  text-decoration: none !important; 
+}
+
+.mobile-menu-btn {
+  background: blanchedalmond;
+  border-radius: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media (max-width: 767px) {
+  hr {
+    margin: 0px;
+  }
+  .xs-navbar-toolbar,.col-xs-2-toolbar, .col-xs-8-toolbar {
+    height: 51px;
+  }
+  .col-xs-2-toolbar, .col-xs-8-toolbar {
+    margin-top: -8px;
+  }
+  .social-margin {
+    margin-top: 10px
+  } 
+  .navbar-nav {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .navbar-toggle {
+    background-color: beige;
+    float: left;
+  }
+  .icon-bar {
+    background-color: black;
+  }
+  .sidebar-menu {
+    text-align: right
+  }
+  .menu-block {
+    height: 34px;
+    width: 44px;
+  }
+  .mob-heading {
+    text-align: center;
+  }
+  .mob-heading-center {
+    display: inline-block;
+    padding-right: 52px;
+  }
+  .nav > li > a {
+    padding: 0px 15px;
+  }
+  .nav > li > a:hover, .nav > li > a:focus {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: 768px) {
+  #social-media {
+    display: none;
+  }
+}
