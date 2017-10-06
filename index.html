@@ -35,9 +35,9 @@
               </li>
               <li class="visible-md visible-lg col-md-4">
                 <ul class="nav navbar-nav navbar-right pull-right">
-                  <li><a href="#" target="_blank" style="display:inline-block;text-decoration:underline">Google+</a><span>&nbsp;|&nbsp;</span></li>
-                  <li><a href="https://www.facebook.com/clintpjoshy" target="_blank" style="display:inline-block;text-decoration:underline">Facebook</a><span>&nbsp;|&nbsp;</span></li>
-                  <li><a href="https://github.com/clintpjoshy" target="_blank" style="display:inline-block;text-decoration:underline">GitHub</a><span>&nbsp;|&nbsp;</span></li>
+                  <li><a href="#" target="_blank" style="display:inline-block;text-decoration:underline; border-right: 1px solid">Google+</a></li>
+                  <li><a href="https://www.facebook.com/clintpjoshy" target="_blank" style="display:inline-block;text-decoration:underline; border-right: 1px solid">Facebook</a></li>
+                  <li><a href="https://github.com/clintpjoshy" target="_blank" style="display:inline-block;text-decoration:underline; border-right: 1px solid">GitHub</a></li>
 <!--                <li><a href="#" target="_blank" style="display:inline-block;text-decoration:underline">LinkedIn</a></li>-->
                 </ul>
               </li>
@@ -61,8 +61,8 @@
         </div>
       </nav>
       <div class="row collapse" id="social-media">
-        <div class="col-xs-12">
-          <ul class="nav navbar-nav">
+        <div class="col-xs-12" style="background: mediumseagreen">
+          <ul class="nav navbar-nav pull-right">
             <li class="social-xs-display"><a id="gp" href="#" target="_blank" style="display:inline-block;text-decoration:underline"></a></li>
             <li class="social-xs-display social-left-margin"><a id="fb" href="https://www.facebook.com/clintpjoshy" target="_blank" style="display:inline-block;text-decoration:underline"></a></li>
             <li class="social-xs-display social-left-margin"><a id="gh" href="https://github.com/clintpjoshy" target="_blank" style="display:inline-block;text-decoration:underline"></a></li>
@@ -78,7 +78,7 @@
           </ul>
         </div>
         <!--Mobile / tabs -->
-        <div class="visible-xs col-sm-12" style="background-color: red">
+        <div id="mobMenu" class="visible-xs col-sm-12">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed menu-block" data-toggle="collapse" data-target="#menu-item" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
@@ -91,11 +91,11 @@
 </div>
           </div>
           <ul id="menu-item" class="collapse nav nav-stacked">
-            <li role="presentation" class="sidebar-menu" ng-repeat="tab in tabs"><a href="#">{{tab}}</a><hr /></li>
+            <li role="presentation" class="sidebar-menu" ng-repeat="tab in tabs"><a href="#">{{tab}}</a></li>
           </ul>
         </div>
         <!-- Main Content -->
-        <div id="main-content" class="col-md-10 col-sm-9 noPadding" style="border: 1px solid blue; height:100%">
+        <div id="main-content" class="col-md-10 col-sm-9 noPadding" style="height:100%">
         </div>
       </div>
     </div>
