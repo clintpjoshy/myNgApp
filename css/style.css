@@ -1,3 +1,9 @@
+// background color for notes
+.highlight {
+  background: yellow;
+}
+
+
 html, body {
   margin: 0px;
 }
