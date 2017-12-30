@@ -4,12 +4,17 @@
   "description": "A simple AngularJS app to build a Portfolio",
   "main": "app.js",
   "scripts": {
+    "start": "node_modules/httpster/bin/httpster -p 3000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Clint Joshy",
   "license": "ISC",
   "dependencies": {
     "angular": "^1.6.2",
+    "angular-route": "^1.6.7",
     "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {
+    "httpster": "1.0.3"
   }
 }
